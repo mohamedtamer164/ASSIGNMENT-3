@@ -6,7 +6,7 @@ namespace ASSIGNMENT_3
 {
     internal class helper
     {
-        public static void AddBonusPages(int pages)
+        public static void AddBonusPages( ref int  pages)
         {
             pages = pages + 50;
 
