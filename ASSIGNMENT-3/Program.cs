@@ -97,12 +97,21 @@
             //// هنا استخدمنا ال ref  عشان يعدل ال array  كلها   هو كان 
             //#endregion
 
-            //answer 9
+            ////answer 9
 
-            if (helper.TryGetPrice("Clean Code", out double price))
-            {
-                Console.WriteLine(price);
-            }
+            //if (helper.TryGetPrice("Clean Code", out double price))
+            //{
+            //    Console.WriteLine(price);
+            //}
+
+
+            // answer 10 
+            #region answer 10
+
+             helper.PrintBookInfo("Clean Code");
+
+             helper.PrintBookInfo("C# Basics", 400);
+            #endregion
         }
 
     }
