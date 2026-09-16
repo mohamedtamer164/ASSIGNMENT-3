@@ -44,17 +44,23 @@
             //PrintWelcomeMessage();
             //#endregion
 
-            // answer 4
-            static void PrintBookTitle(string title)
-            {
-                Console.WriteLine("Book title: " + title);
-            }
+            //// answer 4
+            //static void PrintBookTitle(string title)
+            //{
+            //    Console.WriteLine("Book title: " + title);
+            //}
 
-            
-            
-                PrintBookTitle("Clean Code");
-            
 
+
+            //    PrintBookTitle("Clean Code");
+
+            // ANSWER 5 
+            #region passing by value
+            int pages = 400;//  هنا انت هتخزن عادي ف الداله ال جوا ان ال  pages ب 400 
+            helper.AddBonusPages(pages); //  و هنا انت برضو خزنت هناك و استخدمت الداله و المفروض ب 450 
+            Console.WriteLine(pages);  // 400?? ليه بقا عشان انت خزنت كل واحد ف مكان معين ف ال stack  كل واحد شغال مع نفسه بس مش ليهم ref 
+            // حلها اني اديله ref
+            #endregion
         }
     }
 }
