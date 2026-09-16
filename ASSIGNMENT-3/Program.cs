@@ -54,13 +54,26 @@
 
             //    PrintBookTitle("Clean Code");
 
-            // ANSWER 5 
-            #region passing by value
-            int pages = 400;//  هنا انت هتخزن عادي ف الداله ال جوا ان ال  pages ب 400 
-            helper.AddBonusPages(pages); //  و هنا انت برضو خزنت هناك و استخدمت الداله و المفروض ب 450 
-            Console.WriteLine(pages);  // 400?? ليه بقا عشان انت خزنت كل واحد ف مكان معين ف ال stack  كل واحد شغال مع نفسه بس مش ليهم ref 
-            // حلها اني اديله ref
+            //// ANSWER 5 
+            //#region passing by value
+            //int pages = 400;//  هنا انت هتخزن عادي ف الداله ال جوا ان ال  pages ب 400 
+            //helper.AddBonusPages(pages); //  و هنا انت برضو خزنت هناك و استخدمت الداله و المفروض ب 450 
+            //Console.WriteLine(pages);  // 400?? ليه بقا عشان انت خزنت كل واحد ف مكان معين ف ال stack  كل واحد شغال مع نفسه بس مش ليهم ref 
+            //// حلها اني اديله ref
+            //#endregion
+
+
+            // answer 6
+            #region passing by refrance
+
+            double[] prices = { 25.5, 40.0 }; // هنا خزنت ف الداله  و ف ال  stack  مكان  ليها و لهذا الجزء لوحدوا 
+
+            helper.ApplyDiscount(prices);//  الي انت عاوزه تنها تطبع اول عنصر و تطرح منه 5 و هنا انت هتستخدم الداله برضو بس ف مكانها لكن مش هتعرض
+
+            Console.WriteLine(prices[0]); // اول عنصر هيكون زي م هو 
+            // 2.5  عشانت برضو انت م ظبطش الكود و اديته قثب انه يشاور عليه
             #endregion
         }
+
     }
 }

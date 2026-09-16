@@ -11,5 +11,11 @@ namespace ASSIGNMENT_3
             pages = pages + 50;
 
         }
+
+        public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] = prices[0] - 5;
+        }
     }
+    
 }
