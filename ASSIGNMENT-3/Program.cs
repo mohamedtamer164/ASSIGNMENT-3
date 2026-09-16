@@ -86,16 +86,23 @@
             //// هنا اتغيرت اهي 
             //#endregion
 
-            // answer 8 
-            #region ref refrances type 
+            //// answer 8 
+            //#region ref refrances type 
 
-            double[] prices = { 25.5, 40.0 }; // هنا كان بياشور علي ل  array دي
+            //double[] prices = { 25.5, 40.0 }; // هنا كان بياشور علي ل  array دي
 
-            helper. ReplaceArray(ref prices); // هنا هيلغي انه يشاور عليها لكن هتفضل متخزنه جوا ال  heap بس مش هقدر اوصلها
+            //helper. ReplaceArray(ref prices); // هنا هيلغي انه يشاور عليها لكن هتفضل متخزنه جوا ال  heap بس مش هقدر اوصلها
 
-            Console.WriteLine(prices.Length);
-            // هنا استخدمنا ال ref  عشان يعدل ال array  كلها   هو كان 
-            #endregion
+            //Console.WriteLine(prices.Length);
+            //// هنا استخدمنا ال ref  عشان يعدل ال array  كلها   هو كان 
+            //#endregion
+
+            //answer 9
+
+            if (helper.TryGetPrice("Clean Code", out double price))
+            {
+                Console.WriteLine(price);
+            }
         }
 
     }
