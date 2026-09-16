@@ -114,11 +114,18 @@
             //#endregion
 
 
-            // answer 11 
-            #region ANWER 11
-            helper.PrintBookInfo(pages: 500, title: "C# Programming");
-            #endregion
+            //// answer 11 
+            //#region ANWER 11
+            //helper.PrintBookInfo(pages: 500, title: "C# Programming");
+            //#endregion
 
+            // answer 12 
+
+           helper. PrintAllTitles(
+                "Clean Code",
+                "C# Basics",
+                "Design Patterns"
+            );
         }
 
     }

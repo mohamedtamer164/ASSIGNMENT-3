@@ -39,12 +39,19 @@ namespace ASSIGNMENT_3
         //}
 
 
-        public  static void PrintBookInfo(string title, int pages = 300)
-        {
-            Console.WriteLine("Title: " + title);
-            Console.WriteLine("Pages: " + pages);
-        }
+        //public  static void PrintBookInfo(string title, int pages = 300)
+        //{
+        //    Console.WriteLine("Title: " + title);
+        //    Console.WriteLine("Pages: " + pages);
+        //}
 
+        public static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+        }
     }
 
 }
