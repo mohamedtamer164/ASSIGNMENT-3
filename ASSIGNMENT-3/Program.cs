@@ -33,18 +33,27 @@
             // Console.WriteLine(shelfCopies[1, 0]);
             // #endregion
 
-            #region mehtods
-            static void PrintWelcomeMessage()
-            {
-                Console.WriteLine("Welcome to the Library!");
 
+            //#region mehtods
+            //static void PrintWelcomeMessage()
+            //{
+            //    Console.WriteLine("Welcome to the Library!");
+
+            //}
+
+            //PrintWelcomeMessage();
+            //#endregion
+
+            // answer 4
+            static void PrintBookTitle(string title)
+            {
+                Console.WriteLine("Book title: " + title);
             }
 
-            PrintWelcomeMessage();
-            #endregion
-
-
-
+            
+            
+                PrintBookTitle("Clean Code");
+            
 
         }
     }
