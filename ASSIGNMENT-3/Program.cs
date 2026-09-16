@@ -75,15 +75,26 @@
             //#endregion
 
 
-            // answer 7 
-            #region ref
+            //// answer 7 
+            //#region ref
 
-            int pages = 400;
+            //int pages = 400;
 
-            helper.  AddBonusPages(ref pages);
+            //helper.  AddBonusPages(ref pages);
 
-            Console.WriteLine(pages);
-            // هنا اتغيرت اهي 
+            //Console.WriteLine(pages);
+            //// هنا اتغيرت اهي 
+            //#endregion
+
+            // answer 8 
+            #region ref refrances type 
+
+            double[] prices = { 25.5, 40.0 }; // هنا كان بياشور علي ل  array دي
+
+            helper. ReplaceArray(ref prices); // هنا هيلغي انه يشاور عليها لكن هتفضل متخزنه جوا ال  heap بس مش هقدر اوصلها
+
+            Console.WriteLine(prices.Length);
+            // هنا استخدمنا ال ref  عشان يعدل ال array  كلها   هو كان 
             #endregion
         }
 
